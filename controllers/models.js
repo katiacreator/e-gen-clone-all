@@ -1,4 +1,6 @@
+//if bug check this
 import { Model } from "../models/model.js"
+//if bug check your CRUD ops-if incorrect they will be grayed out
 export {
     index,
     show,
