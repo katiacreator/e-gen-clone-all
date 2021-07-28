@@ -11,7 +11,7 @@ import methodOverride from 'method-override'
 import ('./config/database.js')//if bug check this
 //if bug check this
 import { router as indexRouter } from './routes/index.js'
-import { router as usersRouter } from './routes/users.js'
+import { router as modelsRouter } from './routes/models.js'
 //if bug check this
 import ('./config/database.js')
 
@@ -37,7 +37,7 @@ app.use(
 )
 //if bug check this
 app.use('/', indexRouter)
-app.use('/users', usersRouter)
+app.use('/models', modelsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
